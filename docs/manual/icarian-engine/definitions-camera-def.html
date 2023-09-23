@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Definitions.CameraDef</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>CameraDef</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Definitions
+            </p>
+            <p>
+                <b>Parent:</b>
+                <a href="definitions-component-def.html">ComponentDef</a>
+            </p>
+
+            <h2>Fields</h2>
+
+            <p>
+                <a href="rendering-viewport.html">Viewport</a>
+                Viewport
+                <p>
+                    Default: ( ( 0.0f, 0.0f ), ( 1.0f, 1.0f ), 0.0f, 1.0f )
+                </p>
+                <div class="doc-description">
+                    <p>
+                        The Viewport to be used by the Camera
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>float</b>
+                FOV
+                <p>
+                    Default: 
+                    1.41371669412
+                </p>
+                <div class="doc-description">
+                    <p>
+                        The Field of View of the Camera in radians
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>float</b>
+                Near
+                <p>
+                    Default: 
+                    0.1f
+                </p>
+                <div class="doc-description">
+                    <p>
+                        The distance to the near clipping plane
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>float</b>
+                Far
+                <p>
+                    Default: 
+                    100.0f
+                </p>
+                <div class="doc-description">
+                    <p>
+                        The distance to the far clipping plane
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>uint</b>
+                RenderLayer
+                <p>
+                    Default: 
+                    1
+                </p>
+                <div class="doc-description">
+                    <p>
+                        Binary bit mask of the render layers that the Camera will render
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <a href="definitions-render-texture-data.html">RenderTextureData</a>
+                RenderTexture
+                <p>
+                    Default:
+                    ( uint.MaxValue, uint.MaxValue, 1, false )
+                </p>
+                <div class="doc-description">
+                    <p>
+                        Data to construct a Render Texture to be used by the Camera
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                PostResolve
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Called after the Def has been loaded
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Fields</h2>
+
+            <p>
+                <b>Type</b>
+                ComponentType
+                <p>
+                    Default: 
+                    <a href="rendering-camera.html">Camera</a>
+                </p>
+                <div class="doc-description">
+                    <p>
+                        Determines the type of the Component to be initialized
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>string</b>
+                DefName
+                <div class="doc-description">
+                    <p>
+                        The name of the Def to be used by the DefLibrary
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>string</b>
+                DefPath
+                <div class="doc-description">
+                    <p>
+                        The path of the Def used by editor
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>string</b>
+                DefParentName
+                <div class="doc-description">
+                    <p>
+                        The name of the parent Def
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Properties</h2>
+
+            <p>
+                <b>bool</b>
+                IsSceneDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        Whether or not the Def is a SceneDef
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

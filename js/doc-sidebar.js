@@ -12,6 +12,7 @@ class DocSidebar extends HTMLElement
             `<div class="sidebar">
                 <a href="../index.html">Home</a>
                 <a href="getting-started/getting-started.html">Getting Started</a>
+                <a href="manual/manual.html">Manual</a>
             </div>`;
     }
 }

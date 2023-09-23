@@ -7,6 +7,7 @@ class OverviewSidebar extends HTMLElement
 
     connectedCallback()
     {
+        // TODO: This is a hack so I could just get started on the docs.
         this.innerHTML =
             `<div class="sidebar">
                 <a href="../getting-started.html">&lt;</a>

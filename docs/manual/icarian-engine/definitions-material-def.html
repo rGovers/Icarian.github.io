@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Definitions.MaterialDef</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>MaterialDef</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Definitions
+            </p>
+            <p>
+                <b>Parent:</b>
+                <a href="definitions-def.html">Def</a>
+            </p>
+
+            <h2>Fields</h2>
+
+            <p>
+                <b>string</b>
+                VertexShaderPath
+                <div class="doc-description">
+                    <p>
+                        The path to the VertexShader
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>string</b>
+                PixelShaderPath
+                <div class="doc-description">
+                    <p>
+                        The path to the PixelShader
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>Type</b>
+                VertexType
+                <p>
+                    Default:
+                    <a href="rendering-vertex.html">Vertex</a>
+                </p>
+                <div class="doc-description">
+                    <p>
+                        The type of Vertex used by the Material
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>List&lt;<a href="rendering-vertex-input-attribute.html">VertexInputAttribute</a>&gt;</b>
+                VertexAttibutes
+                <div class="doc-description">
+                    <p>
+                        Determines the vertex data used as input by the shader
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>List&lt;<a href="rendering-shader-buffer-input.html">ShaderBufferInput</a>&gt;</b>
+                ShaderBuffers
+                <div class="doc-description">
+                    <p>
+                        Maps the input slots of the shader to the buffers used by the Material
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="rendering-cull-mode.html">CullMode</a></b>
+                CullingMode
+                <p>
+                    Default:
+                    Back
+                </p>
+                <div class="doc-description">
+                    <p>
+                        Determines which faces are culled
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="rendering-primitive-mode.html">PrimitiveMode</a></b>
+                PrimitiveMode
+                <p>
+                    Default:
+                    Triangles
+                </p>
+                <div class="doc-description">
+                    <p>
+                        Determines how the vertices are interpreted
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>bool</b>
+                EnableColorBlending
+                <p>
+                    Default:
+                    false
+                </p>
+                <div class="doc-description">
+                    <p>
+                        Whether or not to enable color blending
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>List&lt;<a href="definitions-texture-input.html">TextureInput</a>&gt;</b>
+                TextureInputs
+                <div class="doc-description">
+                    <p>
+                        Loads textures to be used by the Material
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                PostResolve
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Called after the Def has been loaded
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Fields</h2>
+
+            <p>
+                <b>string</b>
+                DefName
+                <div class="doc-description">
+                    <p>
+                        The name of the Def to be used by the DefLibrary
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>string</b>
+                DefPath
+                <div class="doc-description">
+                    <p>
+                        The path of the Def used by editor
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>string</b>
+                DefParentName
+                <div class="doc-description">
+                    <p>
+                        The name of the parent Def
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Properties</h2>
+
+            <p>
+                <b>bool</b>
+                IsSceneDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        Whether or not the Def is a SceneDef
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

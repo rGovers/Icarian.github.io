@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Definitions.LightDef</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>LightDef</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Definitions
+            </p>
+
+            <p>
+                <b>Parent:</b>
+                <a href="definitions-componet-def.html">ComponentDef</a>
+            </p>
+
+            <h2>Fields</h2>
+
+            <p>
+                <b>uint</b>
+                RenderLayer
+                <p>
+                    Default:
+                    1
+                </p>
+                <div class="doc-description">
+                    <p>
+                        Bitmask of the RenderLayers that the Light will be rendered on
+                    </p>
+                </div>
+            </p>
+            
+            <p>
+                <b><a href="maths-color.html">Color</a></b>
+                Color
+                <p>
+                    Default:
+                    ( 255, 255, 255, 255 )
+                </p>
+                <div class="doc-description">
+                    <p>
+                        The color of the Light
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>float</b>
+                Intensity
+                <p>
+                    Default:
+                    10.0
+                </p>
+                <div class="doc-description">
+                    <p>
+                        The intensity of the Light
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                PostResolve
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Called after the Def has been loaded
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Fields</h2>
+
+            <p>
+                <b>Type</b>
+                ComponentType
+                <p>
+                    Default:
+                    <a href="rendering-lighting-light.html">Light</a>
+                </p>
+                <div class="doc-description">
+                    <p>
+                        The type of the Component
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>string</b>
+                DefName
+                <div class="doc-description">
+                    <p>
+                        The name of the Def to be used by the DefLibrary
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>string</b>
+                DefPath
+                <div class="doc-description">
+                    <p>
+                        The path of the Def used by editor
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>string</b>
+                DefParentName
+                <div class="doc-description">
+                    <p>
+                        The name of the parent Def
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Properties</h2>
+
+            <p>
+                <b>bool</b>
+                IsSceneDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        Whether or not the Def is a SceneDef
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

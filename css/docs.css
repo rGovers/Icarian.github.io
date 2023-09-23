@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 300px;
     background-color: #222;
     position: fixed;
     height: 100%;
@@ -30,7 +30,7 @@
 
 .doc-content
 {
-    margin-left: 200px;
+    margin-left: 300px;
     padding: 1px 16px;
     height: 1000px;
     background-color: #111;
@@ -42,4 +42,11 @@ body
     margin: 0;
     background-color: #111;
     color: white
+}
+
+.doc-description
+{
+    background-color: #222;
+    padding: 2px;
+    margin-top: 10px;
 }
