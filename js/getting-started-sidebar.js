@@ -12,6 +12,7 @@ class GettingStartedSidebar extends HTMLElement
             `<div class="sidebar">
                 <a href="../docs.html">&lt;</a>
                 <a href="icarian/what-is-icarian.html">What is Icarian Engine?</a>
+                <a href="overview/overview.html">Overview</a>
                 <a href="editor/editor.html">Editor</a>
             </div>`;
     }
