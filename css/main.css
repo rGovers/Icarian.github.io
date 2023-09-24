@@ -53,3 +53,9 @@ h2
     text-align: center;
     margin: 10px;
 }
+
+.link a
+{
+    color: #f0a80e;;
+    text-decoration: none;
+}
