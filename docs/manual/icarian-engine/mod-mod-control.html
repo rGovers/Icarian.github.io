@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mod.ModControl</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>ModControl</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Mod
+            </p>
+
+            <h2>Description</h2>
+
+            <p>
+                The main controller for everything in Icarian Engine.
+            </p>
+
+            <h2>Properties</h2>
+
+            <p>
+                <b>static</b>
+                <b><a href="mod-icarian-assembly.html">IcarianAssembly</a></b>
+                CoreAssembly
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        This is the assembly that contains everything relating to the game. This is needed for everything to work. This is loaded automatically from the Core folder.
+                    </p>
+                </div>  
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>List&lt;<a href="mod-icarian-assembly.html">IcarianAssembly</a>&gt;</b>
+                Assemblies
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        This is a list of all loaded mod assemblies. This will be loaded from the mods folder and modlist.xml in future.
+                        <b>--- FLAGGED FOR CHANGE ---</b>
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>static</b>
+                <b>T</b>
+                GetFunction&lt;T&gt;
+                (
+                    <b>string</b> a_name
+                )
+                <div class="doc-description">
+                    <p>
+                        Will lookup a delegate across the Core Assembly and all loaded mod Assemblies. Returns null if not found.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>T</b>
+                GetFunction&lt;T&gt;
+                (
+                    <b>string</b> a_namespace,
+                    <b>string</b> a_class,
+                    <b>string</b> a_function
+                )
+                <div class="doc-description">
+                    <p>
+                        Will lookup a delegate across the Core Assembly and all loaded mod Assemblies. Returns null if not found.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>Type</b>
+                GetCoreTypeValue
+                (
+                    <b>string</b> a_name,
+                    <b>bool</b> a_def = false
+                )
+                <div class="doc-description">
+                    <p>
+                        Will lookup a type in the Core Assembly. Returns null if not found.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>Type</b>
+                GetTypeValue
+                (
+                    <b>string</b> a_name,
+                    <b>bool</b> a_def = false
+                )
+                <div class="doc-description">
+                    <p>
+                        Will lookup a type across the Core Assembly and all loaded mod Assemblies. Returns null if not found.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>string</b>
+                GetAssetPath
+                (
+                    <b>string</b> a_path
+                )
+                <div class="doc-description">
+                    <p>
+                        Will lookup an asset path across the Core Assembly and all loaded mod Assemblies. Searches LIFO to allow overriding. Returns null if not found.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>string</b>
+                GetScenePath
+                (
+                    <b>string</b> a_path,
+                    <b>string</b> a_modID
+                )
+                <div class="doc-description">
+                    <p>
+                        Will lookup a scene path in a specific mod Assembly. Returns null if not found.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>string</b>
+                GetScenePath
+                (
+                    <b>string</b> a_path
+                )
+                <div class="doc-description">
+                    <p>
+                        Will lookup a scene path across the Core Assembly and all loaded mod Assemblies. Searches LIFO to allow overriding. Returns null if not found.
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

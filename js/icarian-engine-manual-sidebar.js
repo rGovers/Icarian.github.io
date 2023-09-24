@@ -46,6 +46,10 @@ class IcarianEngineManualSidebar extends HTMLElement
                 <a href="maths-vector2.html">Maths.Vector2</a>
                 <a href="maths-vector3.html">Maths.Vector3</a>
                 <a href="maths-vector4.html">Maths.Vector4</a>
+                <a href="mod-assembly-control.html">Mod.AssemblyControl</a>
+                <a href="mod-icarian-assembly.html">Mod.IcarianAssembly</a>
+                <a href="mod-icarian-assembly-info.html">Mod.IcarianAssemblyInfo</a>
+                <a href="mod-mod-control.html">Mod.ModControl</a>
             </div>`;
     }
 }
