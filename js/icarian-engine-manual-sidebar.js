@@ -39,6 +39,13 @@ class IcarianEngineManualSidebar extends HTMLElement
                 <a href="definitions-spot-light-def.html">Definitions.SpotLightDef</a>
                 <a href="definitions-texture-input.html">Definitions.TextureInput</a>
                 <a href="definitions-trigger-body-def.html">Definitions.TriggerBodyDef</a>
+                <a href="maths-color.html">Maths.Color</a>
+                <a href="maths-mathf.html">Maths.Mathf</a>
+                <a href="maths-matrix4.html">Maths.Matrix4</a>
+                <a href="maths-quaternion.html">Maths.Quaternion</a>
+                <a href="maths-vector2.html">Maths.Vector2</a>
+                <a href="maths-vector3.html">Maths.Vector3</a>
+                <a href="maths-vector4.html">Maths.Vector4</a>
             </div>`;
     }
 }

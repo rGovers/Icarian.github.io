@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Maths.Color</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>Color</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Maths
+            </p>
+
+            <h2>Fields</h2>
+
+            <p>
+                <b>byte</b>
+                R
+                <div class="doc-description">
+                    <p>
+                        The red channel
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>byte</b>
+                G
+                <div class="doc-description">
+                    <p>
+                        The green channel
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>byte</b>
+                B
+                <div class="doc-description">
+                    <p>
+                        The blue channel
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>byte</b>
+                A
+                <div class="doc-description">
+                    <p>
+                        The alpha channel
+                    </p>
+                </div>
+            </p>
+
+            <h2>Constructors</h2>
+
+            <p>
+                Color
+                (
+                    <b>byte</b> a_val
+                )
+                <div class="doc-description">
+                    <p>
+                        Creates a new Color with the given value in all channels
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                Color
+                (
+                    <b>byte</b> a_r,
+                    <b>byte</b> a_g,
+                    <b>byte</b> a_b
+                )
+                <div class="doc-description">
+                    <p>
+                        Creates a new Color with the given values in the RGB channels and 255 in the A channel
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                Color
+                (
+                    <b>byte</b> a_r,
+                    <b>byte</b> a_g,
+                    <b>byte</b> a_b,
+                    <b>byte</b> a_a
+                )
+                <div class="doc-description">
+                    <p>
+                        Creates a new Color with the given values
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>static</b>
+                <b>Color</b>
+                FromColorCode
+                (
+                    <b>uint</b> a_colorCode
+                )
+                <div class="doc-description">
+                    <p>
+                        Creates a new Color from the given color code
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="maths-vector4.html">Vector4</a></b>
+                ToVector4
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Converts the Color to a Vector4
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>
