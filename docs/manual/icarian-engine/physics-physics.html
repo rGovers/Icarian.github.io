@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Physics.Physics</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>Physics</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Physics
+            </p>
+
+            <h2>Properties</h2>
+
+            <p>
+                <b>static</b>
+                <b><a href="maths-vector3.html">Vector3</a></b>
+                Gravity
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        The gravity of the world.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>static</b>
+                <b>bool</b>
+                Raycast
+                (
+                    <b><a href="maths-vector3.html">Vector3</a></b> a_pos,
+                    <b><a href="maths-vector3.html">Vector3</a></b> a_dir,
+                    <b>out</b> <b><a href="physics-raycast-result.html">RaycastResult</a>[]</b> a_hits
+                )
+                <div class="doc-description">
+                    <p>
+                        Casts a ray from a_pos in a_dir and returns all hits in a_hits.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>bool</b>
+                SphereCollision
+                (
+                    <b><a href="maths-vector3.html">Vector3</a></b> a_pos,
+                    <b>float</b> a_radius,
+                    <b>out</b> <b><a href="physics-physics-body.html">PhysicsBody</a>[]</b> a_bodies
+                )
+                <div class="doc-description">
+                    <p>
+                        Checks for collisions with a sphere at a_pos with a_radius and returns all hits in a_bodies.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>bool</b>
+                BoxCollision
+                (
+                    <b><a href="maths-matrix4.html">Matrix4</a></b> a_transform,
+                    <b><a href="maths-vector3.html">Vector3</a></b> a_extents,
+                    <b>out</b> <b><a href="physics-physics-body.html">PhysicsBody</a>[]</b> a_bodies
+                )
+                <div class="doc-description">
+                    <p>
+                        Checks for collisions with a box at a_transform with a_extents and returns all hits in a_bodies.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>bool</b>
+                AABBCollsion
+                (
+                    <b><a href="maths-vector3.html">Vector3</a></b> a_min,
+                    <b><a href="maths-vector3.html">Vector3</a></b> a_max,
+                    <b>out</b> <b><a href="physics-physics-body.html">PhysicsBody</a>[]</b> a_bodies
+                )
+                <div class="doc-description">
+                    <p>
+                        Checks for collisions with an AABB at a_min and a_max and returns all hits in a_bodies.
+                        <b>--- FLAGGED TO CHANGE --- TYPO</b>
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

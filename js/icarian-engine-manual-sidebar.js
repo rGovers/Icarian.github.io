@@ -50,6 +50,13 @@ class IcarianEngineManualSidebar extends HTMLElement
                 <a href="mod-icarian-assembly.html">Mod.IcarianAssembly</a>
                 <a href="mod-icarian-assembly-info.html">Mod.IcarianAssemblyInfo</a>
                 <a href="mod-mod-control.html">Mod.ModControl</a>
+                <a href="physics-collision-data.html">Physics.CollisionData</a>
+                <a href="physics-force-mode.html">Physics.ForceMode</a>
+                <a href="physics-physics.html">Physics.Physics</a>
+                <a href="physics-physics-body.html">Physics.PhysicsBody</a>
+                <a href="physics-raycast-result.html">Physics.RaycastResult</a>
+                <a href="physics-rigid-body.html">Physics.RigidBody</a>
+                <a href="physics-trigger-body.html">Physics.TriggerBody</a>
             </div>`;
     }
 }

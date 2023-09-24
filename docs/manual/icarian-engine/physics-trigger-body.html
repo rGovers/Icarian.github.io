@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Physics.TriggerBody</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>TriggerBody</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Physics
+            </p>
+
+            <p>
+                <b>Parent:</b>
+                <a href="physics-physics-body.html">PhysicsBody</a>
+            </p>
+
+            <h2>Properties</h2>
+
+            <p>
+                <b><a href="definitions-trigger-body-def.html">TriggerBodyDef</a></b> 
+                TriggerBodyDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this body.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                Init
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the compoent is created. Override this function to do something when the component is created. Ensure you call the base function.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                OnTriggerEnter
+                (
+                    <b><a href="physics-physics-body.html">PhysicsBody</a></b> a_other
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when another body enters the trigger.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                OnTriggerStay
+                (
+                    <b><a href="physics-physics-body.html">PhysicsBody</a></b> a_other
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when another body stays in the trigger.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                OnTriggerExit
+                (
+                    <b><a href="physics-physics-body.html">PhysicsBody</a></b> a_other
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when another body exits the trigger.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>protected</b>
+                <b>virtual</b>
+                <b>void</b>
+                CollisionShapeSet
+                (
+                    <b><a href="physics-shapes-collision-shape.html">CollisionShape</a></b> a_oldShape,
+                    <b><a href="physics-shapes-collision-shape.html">CollisionShape</a></b> a_newShape
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the collision shape is set. Override this function to do something when the collision shape is set. Ensure you call the base function.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>protected</b>
+                <b>virtual</b>
+                <b>void</b>
+                Dispose
+                (
+                    <b>bool</b> a_disposing
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the object is disposed. Override this function to do something when the object is disposed. Ensure you call the base function.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Properties</h2>
+
+            <p>
+                <b>bool</b>
+                IsDisposed
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        Whether or not the object has been disposed.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="definitions-physics-body-def.html">PhysicsBodyDef</a></b>
+                PhysicsBodyDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this body.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="physics-shapes-collision-shape.html">CollisionShape</a></b>
+                CollisionShape
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        The collision shape of the body.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="definitions-component-def.html">ComponentDef</a></b>
+                Def
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this component.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="game-object.html">GameObject</a></b>
+                GameObject
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The game object that this component is attached to.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="transform.html">Transform</a></b>
+                Transform
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The transform of the game object that this component is attached to.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Functions</h2>
+
+            <p>
+                <b>void</b>
+                SetPosition
+                (
+                    <b><a href="maths-vector3.html">Vector3</a></b> a_pos
+                )
+                <div class="doc-description">
+                    <p>
+                        Sets the position of the body.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>void</b>
+                SetRotation
+                (
+                    <b><a href="maths-quaternion.html">Quaternion</a></b> a_rot
+                )
+                <div class="doc-description">
+                    <p>
+                        Sets the rotation of the body.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>void</b>
+                Dispose
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Disposes of the object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>T</b>
+                GetComponent&lt;<b>T</b>&gt;
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Gets the component of type T attached to the game object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>T</b>
+                GetComponent&lt;<b>T</b>&gt;
+                (
+                    <b><a href="definitions-component-def.html">ComponentDef</a></b> a_def
+                )
+                <div class="doc-description">
+                    <p>
+                        Gets the component of type T attached to the game object with the given definition.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="component.html">Component</a></b>
+                GetComponent
+                (
+                    <b><a href="definitions-component-def.html">ComponentDef</a></b> a_def
+                )
+                <div class="doc-description">
+                    <p>
+                        Gets the component attached to the game object with the given definition.
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>
