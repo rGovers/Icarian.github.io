@@ -57,6 +57,11 @@ class IcarianEngineManualSidebar extends HTMLElement
                 <a href="physics-raycast-result.html">Physics.RaycastResult</a>
                 <a href="physics-rigid-body.html">Physics.RigidBody</a>
                 <a href="physics-trigger-body.html">Physics.TriggerBody</a>
+                <a href="physics-shapes-box-collision-shape.html">Physics.Shapes.BoxCollisionShape</a>
+                <a href="physics-shapes-capsule-collision-shape.html">Physics.Shapes.CapsuleCollisionShape</a>
+                <a href="physics-shapes-collision-shape.html">Physics.Shapes.CollisionShape</a>
+                <a href="physics-shapes-cylinder-collision-shape.html">Physics.Shapes.CylinderCollisionShape</a>
+                <a href="physics-shapes-sphere-collision-shape.html">Physics.Shapes.SphereCollisionShape</a>
             </div>`;
     }
 }
