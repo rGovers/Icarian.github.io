@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendering.RenderPipeline</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>RenderPipeline</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Rendering
+            </p>
+
+            <h2>Description</h2>
+
+            <p>
+                RenderPipelines are used to determine how a render pass is handled. This runs on a separate thread(s) from the main thread. Each camera uses their own group of threads.
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                Resize
+                (
+                    <b>uint</b> a_width,
+                    <b>uint</b> a_height
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the swapchain is resized. Runs on the main render thread.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                ShadowSetup
+                (
+                    <b><a href="rendering-camera.html">Camera</a></b> a_camera
+                )
+                <div class="doc-description">
+                    <p>
+                        Called before the shadow pass. Runs on shadow thread(s) in ThreadPool.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b><a href="maths-matrix4.html">Matrix4</a></b>
+                PreShadow
+                (
+                    <b><a href="rendering-lighting-light">Light</a></b> a_light,
+                    <b><a href="rendering-camera.html">Camera</a></b> a_camera,
+                    <b>uint</b> a_textureSlot
+                )
+                <div class="doc-description">
+                    <p>
+                        Called before the shadow pass for a particular texture. Returns LVP matrix. Runs on shadow thread(s) in the ThreadPool.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                PostShadow
+                (
+                    <b><a href="rendering-lighting-light">Light</a></b> a_light,
+                    <b><a href="rendering-camera.html">Camera</a></b> a_camera,
+                    <b>uint</b> a_textureSlot
+                )
+                <div class="doc-description">
+                    <p>
+                        Called after the shadow pass for a particular texture. Runs on shadow thread(s) in the ThreadPool.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                PreRender
+                (
+                    <b><a href="rendering-camera.html">Camera</a></b> a_camera
+                )
+                <div class="doc-description">
+                    <p>
+                        Called before the main deffered render pass. Runs on render thread(s) in the ThreadPool.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                PostRender
+                (
+                    <b><a href="rendering-camera.html">Camera</a></b> a_camera
+                )
+                <div class="doc-description">
+                    <p>
+                        Called after the main deffered render pass. Runs on render thread(s) in the ThreadPool.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                LightSetup
+                (
+                    <b><a href="rendering-camera.html">Camera</a></b> a_camera
+                )
+                <div class="doc-description">
+                    <p>
+                        Called before the lighting pass. Runs on lighting thread(s) in the ThreadPool.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b><a href="rendering-material.html">Material</a></b>
+                PreLight
+                (
+                    <b><a href="rendering-lighting-light-type.html">LightType</a></b> a_lightType,
+                    <b><a href="rendering-camera.html">Camera</a></b> a_camera
+                )
+                <div class="doc-description">
+                    <p>
+                        Called before the lighting pass for a particular light type. Returns the material to use for the lighting pass. Runs on lighting thread(s) in the ThreadPool.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                PostLight
+                (
+                    <b><a href="rendering-lighting-light-type.html">LightType</a></b> a_lightType,
+                    <b><a href="rendering-camera.html">Camera</a></b> a_camera
+                )
+                <div class="doc-description">
+                    <p>
+                        Called after the lighting pass for a particular light type. Runs on lighting thread(s) in the ThreadPool.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                PostProcess
+                (
+                    <b><a href="rendering-camera.html">Camera</a></b> a_camera
+                )
+                <div class="doc-description">
+                    <p>
+                        Called to do post processing after all passes and before UI. Runs on own thread(s) in the ThreadPool.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>void</b>
+                Init
+                (
+                    <b>RenderPipeline</b> a_pipeline
+                )
+                <div class="doc-description">
+                    <p>
+                        Set which RenderPipeline to use. Uses the default if not called.
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

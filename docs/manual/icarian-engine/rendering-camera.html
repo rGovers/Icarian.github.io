@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendering.Camera</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>Camera</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Rendering
+            </p>
+
+            <p>
+                <b>Parent:</b>
+                <a href="rendering-component.html">Component</a>
+            </p>
+
+            <p>
+                <b>Interfaces:</b>
+                <a href="idestroy.html">IDestroy</a>
+            </p>
+
+            <h2>Properties</h2>
+
+            <p>
+                <b>bool</b>
+                IsDisposed
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        Whether or not the object has been disposed.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="definitions-rendering-camera-def.html">CameraDef</a></b>
+                CameraDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this Component.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="rendering-viewport.html">Viewport</a></b>
+                Viewport
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        The viewport of the camera.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>float</b>
+                FOV
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        The field of view of the camera in radians.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>float</b>
+                Near
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        The near clipping plane of the camera.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>float</b>
+                Far
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        The far clipping plane of the camera.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>uint</b>
+                RenderLayer
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        Bitmask of the render layers this camera will render.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="rendering-irender-texture.html">IRenderTexture</a></b>
+                RenderTexture
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        The render texture of the camera. Null renders to the screen.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                Init
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the object is being initialized.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="maths-vector3.html">Vector3</a></b>
+                ScreenToWorld
+                (
+                    <b><a href="maths-vector3.html">Vector3</a></b> a_screenPos,
+                    <b><a href="maths-vector2.html">Vector2</a></b> a_screenSize
+                )
+                <div class="doc-description">
+                    <p>
+                        Converts a screen position to a world position.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="maths-matrix4.html">Matrix4</a></b>
+                ToProjection
+                (
+                    <b>uint</b> a_width,
+                    <b>uint</b> a_height
+                )
+                <div class="doc-description">
+                    <p>
+                        Converts the camera to a projection matrix.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="maths-matrix4.html">Matrix4</a></b>
+                ToProjection
+                (
+                    <b>uint</b> a_width,
+                    <b>uint</b> a_height,
+                    <b>float</b> a_near,
+                    <b>float</b> a_far
+                )
+                <div class="doc-description">
+                    <p>
+                        Converts the camera to a projection matrix.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>void</b>
+                Dispose
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Disposes of the object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>protected</b>
+                <b>void</b>
+                Dispose
+                (
+                    <b>bool</b> a_disposing
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the object is being disposed.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Properties</h2>
+            
+            <p>
+                <b><a href="definitions-component-def.html">ComponentDef</a></b>
+                Def
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this Component.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="game-object.html">GameObject</a></b>
+                GameObject
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The GameObject this Component is attached to.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="transform.html">Transform</a></b>
+                Transform
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The Transform of the GameObject this Component is attached to.
+                    </p>
+                </div>
+            </p>
+
+            
+        </div>
+    </body>
+</html>

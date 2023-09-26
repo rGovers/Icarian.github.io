@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendering.RenderCommand</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>RenderCommand</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Rendering
+            </p>
+
+            <h2>Description</h2>
+
+            <p>
+                Render Command is used to dispatch commands to the renderer to be executed. It has per thread state reset at the start of each frame. This is used in Render Pipelines to dispatch commands to the renderer.
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>static</b>
+                <b>void</b>
+                BindMaterial
+                (
+                    <b><a href="rendering-material.html">Material</a></b> a_material
+                )
+                <div class="doc-description">
+                    <p>
+                        Binds a material to the renderer.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>void</b>
+                PushTexture
+                (
+                    <b>uint</b> a_slot,
+                    <b><a href="rendering-texture-sampler.html">TextureSampler</a></b> a_sampler
+                )
+                <div class="doc-description">
+                    <p>
+                        Updates the texture sampler for the given slot of the current material. Requires ShaderBufferType.PushTexture for correct behaviour.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>void</b>
+                BindRenderTexture
+                (
+                    <b><a href="rendering-irender-texture.html">IRenderTexture</a></b> a_renderTexture
+                )
+                <div class="doc-description">
+                    <p>
+                        Binds a render texture to the renderer.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>void</b>
+                Blit
+                (
+                    <b><a href="rendering-irender-texture.html">IRenderTexture</a></b> a_srtTexture,
+                    <b><a href="rendering-irender-texture.html">IRenderTexture</a></b> a_dstTexture
+                )
+                <div class="doc-description">
+                    <p>
+                        Blits a source render texture to a destination render texture. Use null in a_dstTexture to blit to the screen.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>void</b>
+                DrawMaterial
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Draws a material with no model information.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>void</b>
+                DrawModel
+                (
+                    <b><a href="maths-matrix4.html">Matrix4</a></b> a_transform,
+                    <b><a href="rendering-model.html">Model</a></b> a_model
+                )
+                <div class="doc-description">
+                    <p>
+                        Draws a model with the given transform. Used for materials that use ShaderBufferType.ModelBuffer.
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

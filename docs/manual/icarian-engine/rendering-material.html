@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendering.Material</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>Material</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Rendering
+            </p>
+
+            <p>
+                <b>Interfaces:</b>
+                <a href="idestroy.html">IDestroy</a>
+            </p>
+
+            <h2>Constructors</h2>
+
+            <p>
+                Material
+                (
+                    <b><a href="rendering-vertex-shader.html">VertexShader</a></b> a_vertexShader,
+                    <b><a href="rendering-pixel-shader.html">PixelShader</a></b> a_pixelShader,
+                    <b>ushort</b> a_vertexStride,
+                    <b><a href="rendering-vertex-input-attribute.html">VertexInputAttribute</a>[]</b> a_attributes,
+                    <b><a href="rendering-shader-buffer-input.html">ShaderBufferInput</a>[]</b> a_shaderInputs,
+                    <b><a href="rendering-cull-mode.html">CullMode</a></b> a_cullMode = CullMode.Back,
+                    <b><a href="rendering-primitive-mode.html">PrimitiveMode</a></b> a_primitiveMode = PrimitiveMode.Triangles,
+                    <b>bool</b> a_enableColorBlending = false
+                )
+                <div class="doc-description">
+                    <p>
+                        Creates a new material.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Properties</h2>
+
+            <p>
+                <b>bool</b>
+                IsDisposed
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        Whether or not the object has been disposed.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="definitions-material-def.html">MaterialDef</a></b>
+                Def
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this material.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>uint</b>
+                RenderLayer
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        Bitmask of the render layers this material is rendered on.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>void</b>
+                SetTexture
+                (
+                    <b>uint</b> a_shaderSlot,
+                    <b><a href="rendering-texture-sampler">TextureSampler</a></b> a_sampler
+                )
+                <div class="doc-description">
+                    <p>
+                        Sets the texture sampler for the given shader slot.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>void</b>
+                Dispose
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Disposes of the material.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>protected</b>
+                <b>void</b>
+                Dispose
+                (
+                    <b>bool</b> a_disposing
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the object is being disposed.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>static</b>
+                <b>Material</b>
+                FromDef
+                (
+                    <b><a href="definitions-material-def.html">MaterialDef</a></b> a_def
+                )
+                <div class="doc-description">
+                    <p>
+                        Creates a new material from the given definition.
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

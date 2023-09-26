@@ -62,6 +62,32 @@ class IcarianEngineManualSidebar extends HTMLElement
                 <a href="physics-shapes-collision-shape.html">Physics.Shapes.CollisionShape</a>
                 <a href="physics-shapes-cylinder-collision-shape.html">Physics.Shapes.CylinderCollisionShape</a>
                 <a href="physics-shapes-sphere-collision-shape.html">Physics.Shapes.SphereCollisionShape</a>
+                <a href="rendering-camera.html">Rendering.Camera</a>
+                <a href="rendering-cull-mode.html">Rendering.CullMode</a>
+                <a href="rendering-default-render-pipeline.html">Rendering.DefaultRenderPipeline</a>
+                <a href="rendering-depth-render-texture.html">Rendering.DepthRenderTexture</a>
+                <a href="rendering-irender-texture.html">Rendering.IRenderTexture</a>
+                <a href="rendering-material.html">Rendering.Material</a>
+                <a href="rendering-mesh-renderer.html">Rendering.MeshRenderer</a>
+                <a href="rendering-model.html">Rendering.Model</a>
+                <a href="rendering-multi-render-texture.html">Rendering.MultiRenderTexture</a>
+                <a href="rendering-pixel-shader.html">Rendering.PixelShader</a>
+                <a href="rendering-primitive-mode.html">Rendering.PrimitiveMode</a>
+                <a href="rendering-render-command.html">Rendering.RenderCommand</a>
+                <a href="rendering-renderer.html">Rendering.Renderer</a>
+                <a href="rendering-render-pipeline.html">Rendering.RenderPipeline</a>
+                <a href="rendering-render-texture.html">Rendering.RenderTexture</a>
+                <a href="rendering-shader-buffer-input.html">Rendering.ShaderBufferInput</a>
+                <a href="rendering-shader-buffer-type.html">Rendering.ShaderBufferType</a>
+                <a href="rendering-shader-slot.html">Rendering.ShaderSlot</a>
+                <a href="rendering-skinned-vertex.html">Rendering.SkinnedVertex</a>
+                <a href="rendering-texture.html">Rendering.Texture</a>
+                <a href="rendering-texture-sampler.html">Rendering.TextureSampler</a>
+                <a href="rendering-vertex-input-attribute.html">Rendering.VertexInputAttribute</a>
+                <a href="rendering-vertex.html">Rendering.Vertex</a>
+                <a href="rendering-vertex-shader.html">Rendering.VertexShader</a>
+                <a href="rendering-vertex-type.html">Rendering.VertexType</a>
+                <a href="rendering-viewport.html">Rendering.Viewport</a>
             </div>`;
     }
 }
