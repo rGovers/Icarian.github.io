@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendering.Animation.AnimationController</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>AnimationController</h1>
+            
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Rendering.Animation
+            </p>
+
+            <h2>Description</h2>
+
+            <p>
+                The base animation controller used by all animation controllers.
+            </p>
+
+            <h2>Properties</h2>
+
+            <p>
+                <b><a href="definitions-animation-controller-def.html">AnimationControllerDef</a></b>
+                ControllerDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition of the animation controller.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                Init
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Initializes the animation controller.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>bool</b>
+                Update
+                (
+                    <b><a href="rendering-animation-animator.html">Animator</a></b> a_animator,
+                    <b>double</b> a_deltaTime
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the animation controller needs to be updated. Return true to continue to UpdateObject.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>void</b>
+                UpdateObject
+                (
+                    <b><a href="rendering-animation-animator.html">Animator</a></b> a_animator,
+                    <b>string</b> a_object,
+                    <b>double</b> a_deltaTime
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the animation controller needs to update an object.
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

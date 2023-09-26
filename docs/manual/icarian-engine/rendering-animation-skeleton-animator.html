@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendering.Animation.SkeletonAnimator</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>SkeletonAnimator</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Rendering.Animation
+            </p>
+
+            <p>
+                <b>Parent:</b>
+                <b><a href="rendering-animation-animator.html">Animator</a></b>
+            </p>
+
+            <h2>Properties</h2>
+
+            <p>
+                <b><a href="definitions-skeleton-animator-def.html">SkeletonAnimatorDef</a></b>
+                SkeletonAnimatorDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="rendering-animation-skeleton.html">Skeleton</a></b>
+                Skeleton
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The skeleton being animated.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                Init
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Initializes the object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>void</b>
+                SetSkeleton
+                (
+                    <b><a href="rendering-animation-skeleton.html">Skeleton</a></b> a_skeleton
+                )
+                <div class="doc-description">
+                    <p>
+                        Sets the skeleton to animate.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>void</b>
+                PushTransform
+                (
+                    <b>string</b> a_object,
+                    <b><a href="maths-matrix4.html">Matrix4</a></b> a_transform
+                )
+                <div class="doc-description">
+                    <p>
+                        Sets the local transform of the given object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                Update
+                (
+                    <b>double</b> a_deltaTime
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the animator needs to be updated.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>protected</b>
+                <b>virtual</b>
+                <b>void</b>
+                Dispose
+                (
+                    <b>bool</b> a_disposing
+                )
+                <div class="doc-description">
+                    <p>
+                        Called when the object is being disposed.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Properties</h2>
+
+            <p>
+                <b>bool</b>
+                IsDisposed
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        Whether or not the object has been disposed.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="definitions-animator-def.html">AnimatorDef</a></b>
+                AnimatorDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition of the animator.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="rendering-animation-animation-controller.html">AnimationController</a></b>
+                AnimationController
+                <div class="doc-description">
+                    <p>
+                        The animation controller used by the animator.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="rendering-animation-animation-update-mode.html">UpdateMode</a></b>
+                UpdateMode
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        Controls how the animator updates.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="definitions-component-def.html">ComponentDef</a></b>
+                Def
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this component.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="game-object.html">GameObject</a></b>
+                GameObject
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The game object that this component is attached to.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="transform.html">Transform</a></b>
+                Transform
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The transform of the game object that this component is attached to.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Functions</h2>
+
+            <p>
+                <b>void</b>
+                Dispose
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Disposes of the object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>T</b>
+                GetComponent&lt;<b>T</b>&gt;
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Gets the component of type T attached to the game object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>T</b>
+                GetComponent&lt;<b>T</b>&gt;
+                (
+                    <b><a href="definitions-component-def.html">ComponentDef</a></b> a_def
+                )
+                <div class="doc-description">
+                    <p>
+                        Gets the component of type T attached to the game object with the given definition.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="component.html">Component</a></b>
+                GetComponent
+                (
+                    <b><a href="definitions-component-def.html">ComponentDef</a></b> a_def
+                )
+                <div class="doc-description">
+                    <p>
+                        Gets the component attached to the game object with the given definition.
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendering.Animation.SkeletonClipAnimationController</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>SkeletonClipAnimationController</h1>
+
+            <hr></hr>
+            
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Rendering.Animation
+            </p>
+
+            <p>
+                <b>Parent:</b>
+                <b><a href="rendering-animation-animation-controller.html">AnimationController</a></b>
+            </p>
+
+            <h2>Properties</h2>
+
+            <p>
+                <b><a href="definitions-skeleton-clip-animation-controller-def.html">SkeletonClipAnimationControllerDef</a></b>
+                SkeletonClipAnimationControllerDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>float</b>
+                Time
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The current time of the animation.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="rendering-animation-animation-clip.html">AnimationClip</a></b>
+                Clip
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The animation clip being played.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Functions</h2>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                Init
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Initializes the object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>virtual</b>
+                <b>bool</b>
+                Update
+                (
+                    <b><a href="rendering-animation-animator.html">Animator</a></b> a_animator,
+                    <b>double</b> a_deltaTime
+                )
+                <div class="doc-description">
+                    <p>
+                        Updates the animation controller.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>virtual</b>
+                <b>void</b>
+                UpdateObject
+                (
+                    <b><a href="rendering-animation-animator.html">Animator</a></b> a_animator,
+                    <b>string</b> a_object,
+                    <b>double</b> a_deltaTime
+                )
+                <div class="doc-description">
+                    <p>
+                        Updates the bones of the skeleton.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Properties</h2>
+
+            <p>
+                <b><a href="definitions-animation-controller-def.html">AnimationControllerDef</a></b>
+                ControllerDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition of the animation controller.
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

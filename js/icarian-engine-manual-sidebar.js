@@ -88,6 +88,17 @@ class IcarianEngineManualSidebar extends HTMLElement
                 <a href="rendering-vertex-shader.html">Rendering.VertexShader</a>
                 <a href="rendering-vertex-type.html">Rendering.VertexType</a>
                 <a href="rendering-viewport.html">Rendering.Viewport</a>
+                <a href="rendering-animation-animation-clip.html">Rendering.Animation.AnimationClip</a>
+                <a href="rendering-animation-animation-controller.html">Rendering.Animation.AnimationController</a>
+                <a href="rendering-animation-animation-field.html">Rendering.Animation.AnimationField</a>
+                <a href="rendering-animation-animation-key.html">Rendering.Animation.AnimationKey</a>
+                <a href="rendering-animation-animation-update-mode.html">Rendering.Animation.AnimationUpdateMode</a>
+                <a href="rendering-animation-animator.html">Rendering.Animation.Animator</a>
+                <a href="rendering-animation-bone.html">Rendering.Animation.Bone</a>
+                <a href="rendering-animation-skeleton.html">Rendering.Animation.Skeleton</a>
+                <a href="rendering-animation-skeleton-animator.html">Rendering.Animation.SkeletonAnimator</a>
+                <a href="rendering-animation-skeleton-clip-animation-controller.html">Rendering.Animation.SkeletonClipAnimationController</a>
+                <a href="rendering-animation-skinned-mesh-renderer.html">Rendering.Animation.SkinnedMeshRenderer</a>
             </div>`;
     }
 }
