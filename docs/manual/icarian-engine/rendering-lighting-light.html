@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rendering.Lighting.Light</title>
+        <link rel="stylesheet" href="../../../css/docs.css">
+        <script src="../../../js/icarian-engine-manual-sidebar.js"></script>
+    </head>
+    <body>
+        <icarian-engine-manual-sidebar></icarian-engine-manual-sidebar>
+
+        <div class="doc-content">
+            <h1>Light</h1>
+
+            <hr></hr>
+
+            <p>
+                <b>Namespace:</b>
+                IcarianEngine.Rendering.Lighting
+            </p>
+
+            <p>
+                <b>Parent:</b>
+                <b><a href="component.html">Component</a></b>
+            </p>
+
+            <h2>Properties</h2>
+
+            <p>
+                <b><a href="definitions-light-def.html">LightDef</a></b>
+                LightDef
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b><a href="rendering-lighting-light-type.html">LightType</a></b>
+                LightType
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The type of light.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b><a href="maths-color.html">Color</a></b>
+                Color
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        The color of the light.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>float</b>
+                Intensity
+                {
+                    get;
+                    set;
+                }
+                <div class="doc-description">
+                    <p>
+                        The intensity of the light.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>abstract</b>
+                <b>IEnumerable&lt;<a href="rendering-irender-texture.html">IRenderTexture</a>&gt;</b>
+                ShadowMaps
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The shadow maps used by this light.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Properties</h2>
+
+            <p>
+                <b><a href="definitions-component-def.html">ComponentDef</a></b>
+                Def
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The definition used in the creation of this component.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="game-object.html">GameObject</a></b>
+                GameObject
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The game object that this component is attached to.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="transform.html">Transform</a></b>
+                Transform
+                {
+                    get;
+                }
+                <div class="doc-description">
+                    <p>
+                        The transform of the game object that this component is attached to.
+                    </p>
+                </div>
+            </p>
+
+            <h2>Parent Functions</h2>
+
+            <p>
+                <b>T</b>
+                GetComponent&lt;<b>T</b>&gt;
+                (
+                )
+                <div class="doc-description">
+                    <p>
+                        Gets the component of type T attached to the game object.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b>T</b>
+                GetComponent&lt;<b>T</b>&gt;
+                (
+                    <b><a href="definitions-component-def.html">ComponentDef</a></b> a_def
+                )
+                <div class="doc-description">
+                    <p>
+                        Gets the component of type T attached to the game object with the given definition.
+                    </p>
+                </div>
+            </p>
+
+            <p>
+                <b><a href="component.html">Component</a></b>
+                GetComponent
+                (
+                    <b><a href="definitions-component-def.html">ComponentDef</a></b> a_def
+                )
+                <div class="doc-description">
+                    <p>
+                        Gets the component attached to the game object with the given definition.
+                    </p>
+                </div>
+            </p>
+        </div>
+    </body>
+</html>

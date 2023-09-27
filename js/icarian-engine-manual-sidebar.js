@@ -99,6 +99,11 @@ class IcarianEngineManualSidebar extends HTMLElement
                 <a href="rendering-animation-skeleton-animator.html">Rendering.Animation.SkeletonAnimator</a>
                 <a href="rendering-animation-skeleton-clip-animation-controller.html">Rendering.Animation.SkeletonClipAnimationController</a>
                 <a href="rendering-animation-skinned-mesh-renderer.html">Rendering.Animation.SkinnedMeshRenderer</a>
+                <a href="rendering-lighting-directional-light.html">Rendering.Lighting.DirectionalLight</a>
+                <a href="rendering-lighting-light.html">Rendering.Lighting.Light</a>
+                <a href="rendering-lighting-light-type.html">Rendering.Lighting.LightType</a>
+                <a href="rendering-lighting-point-light.html">Rendering.Lighting.PointLight</a>
+                <a href="rendering-lighting-spot-light.html">Rendering.Lighting.SpotLight</a>
             </div>`;
     }
 }
