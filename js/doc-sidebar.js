@@ -5,6 +5,8 @@ class DocSidebar extends HTMLElement
         super();
     }
 
+    // <a href="manual/manual.html">Manual</a>
+
     connectedCallback()
     {
         // TODO: This is a hack so I could just get started on the docs.
@@ -12,7 +14,7 @@ class DocSidebar extends HTMLElement
             `<div class="sidebar">
                 <a href="../index.html">Home</a>
                 <a href="getting-started/getting-started.html">Getting Started</a>
-                <a href="manual/manual.html">Manual</a>
+                <a href="docs/IcarianEngine/index.html">Documentation</a>
             </div>`;
     }
 }
